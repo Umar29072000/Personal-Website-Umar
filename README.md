@@ -60,7 +60,6 @@ GOOGLE_CLIENT_SECRET="xxx"
 GOOGLE_CALLBACK="http://127.0.0.1:8000/auth/callback"
 ```
 
-Petunjuk untuk mendapatkan Google Client Id, Google Client Secret dan pengaturan Google Callback, silakan ikuti [Tutorial Ini](https://youtu.be/tqyGXGiJ_0k?t=367)
 
 Lanjut lakukan proses migrate melalui terminal
 
