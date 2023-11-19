@@ -1,8 +1,5 @@
 # Laravel Portofolio Project
 # Umar Khoirul Afif
-# 1152000081
-# apipumar39@gmail.com
-# Institut Teknologi Indonesia
 
 Daftar Isi 
 - [Kebutuhan](#kebutuhan)   
