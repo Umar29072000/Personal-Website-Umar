@@ -1,4 +1,4 @@
-# Laravel Portofolio Project
+# Laravel 10 Portofolio Project
 # Umar Khoirul Afif
 
 Daftar Isi 
