@@ -5,9 +5,6 @@
 - apipumar39@gmail.com
 - Institut Teknologi Indonesia
 
-Bismillah, halo semuanya, selamat datang di Project Laravel Portofolio. Di mana teman-teman bisa mengggunakan, bahkan mengembangkan project ini.
-Project ini adalah hasil yang didapat dari [playlist yang ada di YouTube Programming di Rumahrafif](https://www.youtube.com/playlist?list=PLzt0WdHR1Z3nFHQ0WDk0HSXmSj7ReCPKj)
-
 Daftar Isi 
 - [Kebutuhan](#kebutuhan)   
 - [Langkah Menjalankan](#menjalankan)
