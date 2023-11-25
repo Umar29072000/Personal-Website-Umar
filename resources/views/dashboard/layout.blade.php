@@ -51,10 +51,10 @@
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="navbar-brand-wrapper d-flex justify-content-center">
                 <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
-                    <a class="navbar-brand brand-logo" href="{{ route('halaman.index') }}"><img src="{{ asset('admin/images/logo.svg') }}"
-                            alt="logo" /></a>
+                    <a class="navbar-brand brand-logo" href="{{ route('halaman.index') }}"><img
+                            src="{{ asset('admin/images/admin.svg') }}" alt="logo" /></a>
                     <a class="navbar-brand brand-logo-mini" href="{{ route('halaman.index') }}"><img
-                            src="{{ asset('admin/images/logo-mini.svg') }}" alt="logo" /></a>
+                            src="{{ asset('admin/images/admin.svg') }}" alt="logo" /></a>
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button"
                         data-toggle="minimize">
                         <span class="mdi mdi-sort-variant"></span>
@@ -66,12 +66,12 @@
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                             id="profileDropdown">
-                            <img src="{{ asset('admin') }}/images/faces/{{ Auth::user()->avatar }}" alt="profile" />
+                            {{-- <img src="" alt="profile" /> --}}
                             <span class="nav-profile-name">{{ Auth::user()->name }}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                             aria-labelledby="profileDropdown">
-                            <a class="dropdown-item" href="{{ url('auth/logout') }}">
+                            <a class="dropdown-item" href="{{ url('/logout') }}">
                                 <i class="mdi mdi-logout text-primary"></i>
                                 Logout
                             </a>
@@ -90,38 +90,44 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            <i class="mdi mdi-link menu-icon"></i>
+                            <span class="menu-title">Link Website</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('halaman.index') }}">
-                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <i class="mdi mdi-file-document-box menu-icon"></i>
                             <span class="menu-title">Halaman</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('experience.index') }}">
-                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <i class="mdi mdi-view-dashboard menu-icon"></i>
                             <span class="menu-title">Experience</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('education.index') }}">
-                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <i class="mdi mdi-school menu-icon"></i>
                             <span class="menu-title">Education</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('skill.index') }}">
-                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <i class="mdi mdi-trello menu-icon"></i>
                             <span class="menu-title">Skill</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('profile.index') }}">
-                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <i class="mdi mdi-account-box menu-icon"></i>
                             <span class="menu-title">Profile</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('pengaturanhalaman.index') }}">
-                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <i class="mdi mdi-view-dashboard menu-icon"></i>
                             <span class="menu-title">Pengaturan Halaman</span>
                         </a>
                     </li>
@@ -146,7 +152,8 @@
                 <footer class="footer">
                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
                         <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © <a
-                                href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com </a>2021</span>
+                                href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com
+                            </a>2021</span>
                         <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Only the best <a
                                 href="https://www.bootstrapdash.com/" target="_blank"> Bootstrap dashboard </a>
                             templates</span>

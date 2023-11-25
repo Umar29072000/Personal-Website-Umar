@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('info1')->nullable();
             $table->string('info2')->nullable();
             $table->string('info3')->nullable();
-            $table->text('isi');
+            $table->text('isi')->nullable();
             $table->timestamps();
         });
     }

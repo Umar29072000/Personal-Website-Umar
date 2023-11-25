@@ -27,13 +27,11 @@ Route::get('/', [FrontendController::class, 'index']);
 
 Route::redirect('home', 'dashboard');
 
-Route::get('/auth', [AuthController::class, "index"])->middleware('guest');
-Route::get('/auth/redirect', [AuthController::class, "redirect"])->middleware('guest');
-Route::get('/auth/callback', [AuthController::class, "callback"])->middleware('guest');
-Route::get('/auth/logout', [AuthController::class, "logout"]);
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'authenticated']);
+Route::get('/logout', [AuthController::class, 'logout']);
 
-Route::prefix('dashboard')->middleware('auth')->group(
-    function () {
+Route::prefix('dashboard')->middleware('auth')->group(function () {
         Route::get('/', [HalamanController::class, 'index']);
         Route::resource('halaman', HalamanController::class);
         Route::resource('experience', ExperienceController::class);
