@@ -45,19 +45,15 @@ DB_USERNAME=xxx
 DB_PASSWORD=xxx
 ```
 
-Tambahkan script di bagian bawah file <code>.env</code>,
-
-```
-GOOGLE_CLIENT_ID="xxx"
-GOOGLE_CLIENT_SECRET="xxx"
-GOOGLE_CALLBACK="http://127.0.0.1:8000/auth/callback"
-```
-
-
 Lanjut lakukan proses migrate melalui terminal
 
 ```
 php artisan migrate
+```
+Lanjut lakukan proses seeder melalui teriminal dan sebelum itu sesuaikan seerdernya, lalu jalankan perintah
+
+```
+php artisan make:seeder
 ```
 
 Lanjut, generate key
