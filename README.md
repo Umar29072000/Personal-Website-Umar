@@ -50,7 +50,7 @@ Lanjut lakukan proses migrate melalui terminal
 ```
 php artisan migrate
 ```
-Lanjut lakukan proses seeder melalui teriminal dan sebelum itu sesuaikan seerdernya, lalu jalnkan perintah
+Lanjut lakukan proses seeder melalui teriminal dan sebelum itu sesuaikan seerdernya, lalu jalankan perintah
 
 ```
 php artisan make:seeder
