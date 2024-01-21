@@ -4,6 +4,7 @@
 Daftar Isi 
 - [Kebutuhan](#kebutuhan)   
 - [Langkah Menjalankan](#menjalankan)
+- [Login](#login)
 - [Kontribusi](#kontribusi)
 
 ## Development
@@ -15,6 +16,8 @@ Beberapa hal yang diperlukan untuk menjalankan project ini di lokal teman-teman:
 -   PHP
 -   MySQL
 -   Composer
+-   Node.JS
+
 
 ### Menjalankan
 
@@ -22,14 +25,23 @@ Silakan **fork** dulu project ini di **REPOSITORY yang teman-teman punya**
 Clone project dari repo yang teman-teman punya
 
 ```
-git clone https://github.com/{username github teman-teman}/laravel-portfolio-project.git
-cd laravel-portfolio-project
+git clone https://github.com/{username github teman-teman}/Personal_Website_Umar.git
+
+cd Personal_Website_Umar
 ```
 
 Jalan terminal dengan perintah:
 
 ```
-composer install && composer update
+composer install
+```
+
+```
+npm install
+```
+
+```
+npm run dev
 ```
 
 Lanjut copy file <code>.env.example</code> dengan nama <code>.env</code>. Kemudian edit beberapa di file berikut ini:
@@ -48,18 +60,19 @@ DB_PASSWORD=xxx
 Lanjut lakukan proses migrate melalui terminal
 
 ```
-php artisan migrate
-```
-Lanjut lakukan proses seeder melalui teriminal dan sebelum itu sesuaikan seerdernya, lalu jalankan perintah
-
-```
-php artisan make:seeder
+php artisan migrate:fresh --seed
 ```
 
 Lanjut, generate key
 
 ```
 php artisan key:generate
+```
+
+Lalu jalankan perintah
+
+```
+php artisan storage:link
 ```
 
 Jalankan project dengan perintah
@@ -69,6 +82,7 @@ php artisan serve
 ```
 
 Silakan dibuka di <code>http://127.0.0.1:8000</code>
+
 
 ### Kontribusi
 
