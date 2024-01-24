@@ -84,6 +84,11 @@ php artisan serve
 Silakan dibuka di <code>http://127.0.0.1:8000</code>
 
 
+### Login
+- Email = Admin@gmail.com
+- Password = 123456
+
+
 ### Kontribusi
 
 1. Lakukan langkah development di bagian atas
